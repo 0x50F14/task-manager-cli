@@ -56,5 +56,3 @@ This project follows the principles of the books:
 
 ## 📄 License
 [MIT](LICENSE)
-
-Translated with DeepL.com (free version)
