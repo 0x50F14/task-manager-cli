@@ -3,8 +3,8 @@ import { loadTasks, saveTasks } from './storage';
 import { v4 as uuidv4 } from 'uuid';
 
 /**
- * A função `addTask` abstrai o conceito de criar uma nova unidade de trabalho.
- * O uso de UUIDs evita conflitos futuros, mesmo com múltiplas execuções concorrentes.
+ * The `addTask` function abstracts the concept of creating a new unit of work.
+ * The use of UUIDs avoids future conflicts, even with multiple concurrent executions.
  */
 export function addTask(title: string, description: string): void {
   const tasks = loadTasks();

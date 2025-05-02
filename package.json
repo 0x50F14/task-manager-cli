@@ -2,12 +2,13 @@
   "name": "task-manager-cli",
   "version": "1.0.0",
   "description": "Gerenciador de tarefas via CLI usando TypeScript",
+  "type": "module",
   "main": "dist/index.js",
   "bin": {
     "task-manager": "./dist/index.js"
   },
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "tsx src/index.ts",
     "build": "tsc",
     "test": "jest"
   },
@@ -19,11 +20,12 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
     "@types/inquirer": "^9.0.0",
-    "ts-jest": "^29.0.0",
-    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
     "jest": "^29.0.0",
-    "ts-node": "^10.9.1"
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.9.1",
+    "tsx": "^4.19.4",
+    "typescript": "^5.0.0"
   }
 }
